@@ -69,3 +69,30 @@ window.onload = function () {
     // Repeat every 15-25 seconds
     setInterval(showSocialProof, 20000);
 };
+
+// Upsell Modal Logic
+const modal = document.getElementById('upsell-modal');
+const basicBtn = document.getElementById('basic-plan-btn');
+const closeBtn = document.querySelector('.close-modal');
+const secondaryBtn = document.querySelector('.modal-btn-secondary');
+
+if (basicBtn) {
+    basicBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    });
+}
+
+const closeModal = (e) => {
+    if (e) e.preventDefault();
+    modal.style.display = 'none';
+    document.body.classList.remove('no-scroll');
+};
+
+if (closeBtn) closeBtn.addEventListener('click', closeModal);
+if (secondaryBtn) secondaryBtn.addEventListener('click', closeModal);
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+});
