@@ -469,23 +469,20 @@ body.no-scroll {
     height: 100%;
     background: rgba(0,0,0,0.85);
     display: none;
-    align-items: flex-start; /* Start from top if too tall */
+    align-items: center; /* Center it */
     justify-content: center;
     z-index: 2000;
-    padding: 20px;
-    overflow-y: auto; /* Allow scrolling if modal is tall */
+    padding: 10px;
 }
 
 .modal-content {
     background: white;
-    border-radius: 25px;
+    border-radius: 20px;
     width: 100%;
-    max-width: 400px;
-    padding: 30px 20px;
+    max-width: 360px;
+    padding: 20px 15px;
     text-align: center;
     position: relative;
-    margin-top: 40px; /* Space from top */
-    margin-bottom: 40px;
     animation: modalIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -496,60 +493,60 @@ body.no-scroll {
 
 .close-modal {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 10px;
+    right: 15px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     color: #ccc;
     cursor: pointer;
 }
 
-.modal-title { font-size: 22px; font-weight: 800; margin-bottom: 10px; color: #1a1a1a; }
-.modal-sub { font-size: 14px; color: #666; margin-bottom: 25px; }
+.modal-title { font-size: 18px; font-weight: 800; margin-bottom: 5px; color: #1a1a1a; }
+.modal-sub { font-size: 12px; color: #666; margin-bottom: 15px; }
 
 .modal-price-box {
     background: #F8F9FA;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
-.modal-old-price { text-decoration: line-through; color: #e74c3c; font-weight: 700; font-size: 18px; }
-.modal-new-price { color: #27AE60; font-size: 32px; font-weight: 900; }
+.modal-old-price { text-decoration: line-through; color: #e74c3c; font-weight: 700; font-size: 14px; }
+.modal-new-price { color: #27AE60; font-size: 26px; font-weight: 900; }
 
 .modal-features {
     list-style: none;
     text-align: left;
-    margin-bottom: 30px;
-    padding: 0 10px;
+    margin-bottom: 20px;
+    padding: 0 5px;
 }
 
 .modal-features li {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 14px;
+    gap: 10px;
+    font-size: 12px;
     font-weight: 600;
 }
 
-.modal-features i { color: #27AE60; font-size: 18px; }
+.modal-features i { color: #27AE60; font-size: 14px; }
 
 .modal-btn-primary {
     display: block;
     background: #27AE60;
     color: white;
     text-decoration: none;
-    padding: 18px;
+    padding: 14px;
     border-radius: 50px;
     font-weight: 800;
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
     box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
     transition: transform 0.2s;
 }
@@ -560,10 +557,10 @@ body.no-scroll {
     display: block;
     color: #333;
     text-decoration: none;
-    padding: 15px;
+    padding: 12px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     border: 1px solid #eee;
     transition: background 0.2s;
 }
