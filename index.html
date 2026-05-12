@@ -7,9 +7,22 @@
     <meta name="description" content="Tenha acesso imediato a mais de 1.000 modelos profissionais de convites prontos para personalizar e vender.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="mockup03.png" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+    <style>
+        :root { --primary: #E9125E; --white: #FFFFFF; --text-dark: #1A1A1A; }
+        body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text-dark); margin: 0; overflow-x: hidden; }
+        .hero { padding: 40px 0 20px; text-align: center; }
+        .main-title { font-size: 19px; line-height: 1.5; margin-bottom: 25px; padding: 0 10px; }
+        .hero-image img { width: 100%; max-width: 240px; height: auto; display: block; margin: 0 auto; }
+        .cta-btn { display: block; background: var(--primary); color: white; padding: 18px; border-radius: 50px; font-weight: 800; text-align: center; text-decoration: none; }
+    </style>
 </head>
 <body>
 
@@ -40,7 +53,7 @@
             </h1>
 
             <div class="hero-image">
-                <img src="mockup03.png" alt="Mockup Principal">
+                <img src="mockup03.png" alt="Mockup dos Convites" width="240" height="240" fetchpriority="high">
             </div>
 
             <p class="hero-sub">
@@ -57,27 +70,27 @@
             <h2 class="gallery-title">VEJA OS MODELOS QUE VOCÊ PODE <span class="pink">MONTAR E VENDER</span></h2>
             <div class="gallery-scroll">
                 <div class="gallery-track">
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-01.jpg" alt="Modelo 1"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-02.jpg" alt="Modelo 2"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-03.jpg" alt="Modelo 3"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-04.jpg" alt="Modelo 4"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-05.jpg" alt="Modelo 5"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-06.jpg" alt="Modelo 6"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-07.jpg" alt="Modelo 7"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-08.jpg" alt="Modelo 8"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-09.jpg" alt="Modelo 9"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-10.jpg" alt="Modelo 10"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-01.jpg" alt="Modelo 1" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-02.jpg" alt="Modelo 2" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-03.jpg" alt="Modelo 3" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-04.jpg" alt="Modelo 4" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-05.jpg" alt="Modelo 5" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-06.jpg" alt="Modelo 6" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-07.jpg" alt="Modelo 7" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-08.jpg" alt="Modelo 8" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-09.jpg" alt="Modelo 9" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-10.jpg" alt="Modelo 10" width="220" height="300" loading="lazy"></div>
                     <!-- Duplicados para Loop Infinito -->
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-01.jpg" alt="Modelo 1"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-02.jpg" alt="Modelo 2"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-03.jpg" alt="Modelo 3"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-04.jpg" alt="Modelo 4"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-05.jpg" alt="Modelo 5"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-06.jpg" alt="Modelo 6"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-07.jpg" alt="Modelo 7"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-08.jpg" alt="Modelo 8"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-09.jpg" alt="Modelo 9"></div>
-                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-10.jpg" alt="Modelo 10"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-01.jpg" alt="Modelo 1" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-02.jpg" alt="Modelo 2" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-03.jpg" alt="Modelo 3" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-04.jpg" alt="Modelo 4" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-05.jpg" alt="Modelo 5" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-06.jpg" alt="Modelo 6" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-07.jpg" alt="Modelo 7" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-08.jpg" alt="Modelo 8" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-09.jpg" alt="Modelo 9" width="220" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><img src="imagens-convites-prontos/convite-10.jpg" alt="Modelo 10" width="220" height="300" loading="lazy"></div>
                 </div>
             </div>
         </div>
@@ -109,7 +122,7 @@
         <div class="pink-header">O QUE VOCÊ VAI RECEBER</div>
         <div class="container">
             <div class="bundle-mockup">
-                <img src="mockup01.png" alt="Mockup do Produto">
+                <img src="mockup01.png" alt="Bundle Mockup" width="380" height="380" loading="lazy">
             </div>
 
             <div class="acesso-badge">ACESSO IMEDIATO</div>
@@ -225,7 +238,7 @@
                 <!-- Bônus 1 -->
                 <div class="bonus-card">
                     <div class="bonus-header">#1 – BÔNUS HOJE!</div>
-                    <div class="bonus-img"><img src="bonus1.PNG" alt="Bônus 1"></div>
+                    <div class="bonus-img"><img src="bonus1.PNG" alt="Bônus 1" width="220" height="220" loading="lazy"></div>
                     <div class="bonus-body">
                         <h4>KIT PRIMEIRA VENDA</h4>
                         <p>Tudo o que você precisa para fazer sua primeira venda — mesmo sem ter vendido nada antes.</p>
@@ -238,7 +251,7 @@
                 <!-- Bônus 2 -->
                 <div class="bonus-card">
                     <div class="bonus-header">#2 – BÔNUS HOJE!</div>
-                    <div class="bonus-img"><img src="bonus2.PNG" alt="Bônus 2"></div>
+                    <div class="bonus-img"><img src="bonus2.PNG" alt="Bônus 2" width="220" height="220" loading="lazy"></div>
                     <div class="bonus-body">
                         <h4>100 FORMAS DE DIVULGAR + PLANNER 30 DIAS</h4>
                         <p>100 ideias prontas de posts e um planner de 30 dias para você divulgar no WhatsApp e Instagram.</p>
@@ -251,7 +264,7 @@
                 <!-- Bônus 3 -->
                 <div class="bonus-card">
                     <div class="bonus-header">#3 – BÔNUS HOJE!</div>
-                    <div class="bonus-img"><img src="bonus3.PNG" alt="Bônus 3"></div>
+                    <div class="bonus-img"><img src="bonus3.PNG" alt="Bônus 3" width="220" height="220" loading="lazy"></div>
                     <div class="bonus-body">
                         <h4>100 MENSAGENS PRONTAS PARA VENDER</h4>
                         <p>Copie, cole no WhatsApp e chame clientes na hora — sem precisar pensar no que escrever.</p>
@@ -264,7 +277,7 @@
                 <!-- Bônus 4 -->
                 <div class="bonus-card">
                     <div class="bonus-header">#4 – BÔNUS HOJE!</div>
-                    <div class="bonus-img"><img src="bonus4.PNG" alt="Bônus 4"></div>
+                    <div class="bonus-img"><img src="bonus4.PNG" alt="Bônus 4" width="220" height="220" loading="lazy"></div>
                     <div class="bonus-body">
                         <h4>+200 ARTES PRONTAS PARA STORIES E FEED</h4>
                         <p>Mais de 200 artes prontas para divulgar seus convites nos stories e no feed.</p>
@@ -277,7 +290,7 @@
                 <!-- Bônus 5 -->
                 <div class="bonus-card">
                     <div class="bonus-header">#5 – BÔNUS HOJE!</div>
-                    <div class="bonus-img"><img src="bonus5.PNG" alt="Bônus 5"></div>
+                    <div class="bonus-img"><img src="bonus5.PNG" alt="Bônus 5" width="220" height="220" loading="lazy"></div>
                     <div class="bonus-body">
                         <h4>PACK SAVE THE DATE</h4>
                         <p>Convites de "Salve a Data" muito procurados para casamentos e eventos.</p>
@@ -290,7 +303,7 @@
                 <!-- Bônus 6 -->
                 <div class="bonus-card">
                     <div class="bonus-header">#6 – BÔNUS HOJE!</div>
-                    <div class="bonus-img"><img src="bonus6.PNG" alt="Bônus 6"></div>
+                    <div class="bonus-img"><img src="bonus6.PNG" alt="Bônus 6" width="220" height="220" loading="lazy"></div>
                     <div class="bonus-body">
                         <h4>CONVITES ANIMADOS EDITÁVEIS</h4>
                         <p>Convites com animação que as pessoas cobram de R$80 a R$150 no mercado.</p>
