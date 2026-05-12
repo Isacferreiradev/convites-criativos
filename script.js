@@ -91,12 +91,6 @@ const closeModal = (e) => {
 };
 
 if (closeBtn) closeBtn.addEventListener('click', closeModal);
-if (secondaryBtn) {
-    secondaryBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-        document.body.classList.remove('no-scroll');
-    });
-}
 
 window.addEventListener('click', (e) => {
     if (e.target === modal) closeModal();
